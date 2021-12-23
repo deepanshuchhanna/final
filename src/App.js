@@ -4,6 +4,11 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import { Navbar, Products, Cart, Checkout } from './components';
 import { commerce } from './lib/commerce';
+// import "./index.less";
+import "@ant-design/compatible/assets/index.css";
+import "antd/dist/antd.css";
+// import Dashboard from "./components/Dashboard/Dashboard.jsx";
+
 
 const App = () => {
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -76,6 +81,9 @@ const App = () => {
       <div style={{ display: 'flex' }}>
         <CssBaseline />
         <Navbar totalItems={cart.total_items} handleDrawerToggle={handleDrawerToggle} />
+        {/* <Dashboard /> */}
+
+
         <Switch>
           <Route exact path="/">
             <Products products={products} onAddToCart={handleAddToCart} handleUpdateCartQty />
