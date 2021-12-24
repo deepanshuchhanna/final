@@ -30,6 +30,8 @@ function Dashboard({ products, onAddToCart, ...props }) {
 
   const [isModalVisible, setIsModalVisible] = useState(false);
 
+  // const [isModalVisible1, setIsModalVisible1] = useState(false);
+
   const showModal = () => {
     setIsModalVisible(true);
   };
@@ -41,6 +43,10 @@ function Dashboard({ products, onAddToCart, ...props }) {
   const handleCancel = () => {
     setIsModalVisible(false);
   };
+
+  // const showModal1 = () => {
+  //   setIsModalVisible1(true);
+  // };
 
   // for editable placeholder
   const { Paragraph } = Typography;
@@ -114,7 +120,7 @@ function Dashboard({ products, onAddToCart, ...props }) {
                   onClick={showModal}
                 />
               }
-              style={{ fontSize: "18px", paddingLeft: "22px" }}
+              style={{ fontSize: "15px", paddingLeft: "22px" }}
             >
               <Modal
                 title="Edit Profile"
@@ -182,6 +188,8 @@ function Dashboard({ products, onAddToCart, ...props }) {
                   style={{ fontSize: "18px", paddingRight: "15px" }}
                 />
               }
+              style={{ fontSize: "15px" }}
+              // onClick={showModal1}
               title="Menu"
             >
               <Menu.Item key="4">Bakery</Menu.Item>
@@ -197,9 +205,10 @@ function Dashboard({ products, onAddToCart, ...props }) {
               key="sub2"
               icon={
                 <StarOutlined
-                  style={{ fontSize: "30px", paddingRight: "5px" }}
+                  style={{ fontSize: "18px", paddingRight: "5px" }}
                 />
               }
+              style={{ fontSize: "15px" }}
               title="Our Special"
             >
               <Menu.Item key="9">Dish 1</Menu.Item>
@@ -213,9 +222,10 @@ function Dashboard({ products, onAddToCart, ...props }) {
               key="11"
               icon={
                 <AreaChartOutlined
-                  style={{ fontSize: "30px", paddingRight: "5px" }}
+                  style={{ fontSize: "18px", paddingRight: "5px" }}
                 />
               }
+              style={{ fontSize: "18p" }}
             >
               Gallery
             </Menu.Item>
@@ -226,9 +236,10 @@ function Dashboard({ products, onAddToCart, ...props }) {
               key="12"
               icon={
                 <QuestionCircleOutlined
-                  style={{ fontSize: "30px", paddingRight: "5px" }}
+                  style={{ fontSize: "18px", paddingRight: "5px" }}
                 />
               }
+              style={{ fontSize: "15px" }}
             >
               FAQ
             </Menu.Item>
@@ -239,9 +250,10 @@ function Dashboard({ products, onAddToCart, ...props }) {
               key="13"
               icon={
                 <MessageOutlined
-                  style={{ fontSize: "30px", paddingRight: "5px" }}
+                  style={{ fontSize: "18px", paddingRight: "5px" }}
                 />
               }
+              style={{ fontSize: "15px" }}
             >
               Feedback
             </Menu.Item>
@@ -252,9 +264,10 @@ function Dashboard({ products, onAddToCart, ...props }) {
               key="14"
               icon={
                 <LoginOutlined
-                  style={{ fontSize: "30px", paddingRight: "5px" }}
+                  style={{ fontSize: "18px", paddingRight: "5px" }}
                 />
               }
+              style={{ fontSize: "15px" }}
             >
               LogOut
             </Menu.Item>
